@@ -1,6 +1,8 @@
 body {
   font-family: montserrat;
-  background-color: rgb(214, 245, 234);
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/144/496/original/quote.jpg?1726926657);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 a {
   color: rgb(61, 127, 104);
