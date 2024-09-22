@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,7 +20,7 @@
         <h1>Welcome to quote generator</h1>
       </header>
       <main>
-        <form>
+        <form id="quote-generator-form">
           <input
             type="text"
             placeholder="Enter the topic of the quote"
@@ -30,11 +31,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="quote">
-          the quote will come here
-          <br />
-          and also here
-        </div>
+        <div class="quote" id="quote"></div>
       </main>
       <footer>
         This AI project was coded by
