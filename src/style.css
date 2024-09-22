@@ -10,7 +10,7 @@ a {
 .container {
   margin: 60px auto;
   max-width: 600px;
-  background-color: rgba(214, 190, 239, 0);
+  background-color: transparent;
   border-radius: 20px;
 }
 
@@ -35,7 +35,7 @@ h2 {
 
 form {
   padding: 30px;
-  background-color: rgba(214, 190, 239, 0.1);
+  background-color: transparent;
   border-radius: 20px;
   display: flex;
   margin-bottom: 30px;
