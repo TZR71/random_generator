@@ -3,7 +3,7 @@ function displayQuote(response) {
     strings: response.data.answer,
     autoStart: true,
     cursor: "",
-    delay: 1.5,
+    delay: 80,
   });
 }
 
@@ -17,6 +17,13 @@ function generateQuote(event) {
   let context =
     "You are a quote expert and native in Finnish language. Your mission is to create a short quote and also translate it to English. Please separate the quote and translation with a <br />. Please sign the quote `SheCodes AI`with font-size:12px,  to the bottom RIGHT corner of quote. ";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+
+  //When quote is generated, this moves "hidden" property from class quote,
+  //showing a message while quote is generated
+  let quoteElement = document.querySelector("#quote");
+  quoteElement.classList.remove("hidden");
+  quoteElement.innerHTML = `<div class="composing"> Generating quote for you about "${instructionsInput.value}"...</div>`;
+
   //Make a call ti the API
   axios.get(apiUrl).then(displayQuote);
   //Display the generated quote

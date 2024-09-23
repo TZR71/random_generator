@@ -25,19 +25,23 @@
         </h2>
       </header>
       <main>
-        <form id="quote-generator-form">
-          <input
-            type="text"
-            placeholder="Enter the topic of the quote"
-            autofocus
-            required
-            autocomplete="off"
-            class="type-here"
-            id="instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="quote" id="quote"></div>
+        <div class="form-container">
+          <form id="quote-generator-form">
+            <input
+              type="text"
+              placeholder="Enter a key word to generate the quote"
+              autofocus
+              required
+              autocomplete="off"
+              class="type-here"
+              id="instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <small> i.e: love, life, rakkaus, maailmankaikkeus...</small>
+        </div>
+
+        <div class="quote hidden" id="quote"></div>
       </main>
       <footer>
         This AI project was coded by
