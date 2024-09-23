@@ -17,7 +17,7 @@ function generateQuote(event) {
   let apiKey = "eb0432d8499otf6b1e6a9e4fe11cf387";
   let prompt = `Generate a Finnish quote about${instructionsInput.value}`;
   let context =
-    "You are a quote expert and native in Finnish language. Your mission is to create a short quote and also translate it to English. Please separate the quote and translation with a <br />. Please sign the quote `SheCodes AI`with font-size:12px,  to the bottom RIGHT corner of quote. ";
+    "You are a quote expert and native in Finnish language. Your mission is to create a short quote and also translate it to English. Please separate the quote and translation with a <br />. Please sign the quote `SheCodes AI`with font-size:12px, to the bottom RIGHT corner of quote.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   //When quote is generated, this moves "hidden" property from class "quote",
